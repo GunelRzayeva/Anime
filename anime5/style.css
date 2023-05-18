@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	background: white;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+.box{
+	width: 5vw;
+	height: 5vw;
+	border-radius: 50%;
+	background: #2B3241;
+	box-shadow: 0  4px 8px 0 rgba(0, 0, 0, 0.2 ),
+				0  6px 20px  0 #686FFD;
+	animation: numune 3s cubic-bezier(0.16,  1,  0.3,   1) 	1s infinite alternate;
+}
+
+@keyframes numune {
+	0%{
+      width: 5vw;
+	  height: 5vw;
+	  border-radius: 50%;
+	  box-shadow: 0  4px 8px 0 rgba(0, 0, 0, 0.2 ),
+				0  6px 20px  0 #686FFD;
+	} 
+
+	25%{
+	  width: 5vw;
+	  height: 5vw;
+	  border-radius: 50%;
+	  box-shadow: 0  4px 8px 0 rgba(0, 0, 0, 0.2 ),
+				0  6px 20px  0 #686FFD;
+	}
+
+	50%{
+	  width: 60px;
+	  height: 240px;
+	  border-radius: 25px;
+	  box-shadow: 0  4px 8px 0 rgba(0, 0, 0, 0.2 ),
+				0  6px 20px  0 #686FFD;
+	}
+
+	70%{
+	  width: 480px;
+	  height: 240px;
+	  border-radius: 25px;
+	  box-shadow: 0  4px 8px 0 rgba(0, 0, 0, 0.2 ),
+				0  6px 20px  0 #686FFD;
+	}
+	100%{
+	  width: 480px;
+	  height: 480px;
+	  border-radius: 50%;
+	  box-shadow: 0  4px 8px 0 rgba(0, 0, 0, 0.2 ),
+				0  6px 20px  0 #686FFD;
+	}
+}
